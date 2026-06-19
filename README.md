@@ -8,7 +8,7 @@ Required variables have no default and the bot cannot start without them.
 
 | Environment variable | Default | Description |
 |---|---:|---|
-| `DISCORD_APPLICATION_TOKEN` | none | Required. Discord bot token from the Discord Developer Portal. |
+| `DISCORD_APPLICATION_TOKEN` | none | ***Required***. Discord bot token from the Discord Developer Portal. |
 | `DISCORD_GUILD_ID` | none | Optional Discord server ID. When present, the command is registered immediately in that server. When absent, the command is registered globally. |
 | `DISCORD_CHANNEL_ID` | none | Optional channel ID. When present, the command is executed only in that channel. Attempts from other channels receive a private response linking to the configured channel. When absent, the command works in every channel. |
 
@@ -28,9 +28,9 @@ Required variables have no default and the bot cannot start without them.
 
 | Environment variable | Default | Description |
 |---|---:|---|
-| `CFTOOLS_APPLICATION_ID` | none | Required. ID of the CFTools Data API application. |
-| `CFTOOLS_APPLICATION_SECRET` | none | Required. Secret of the same CFTools Data API application. This is not the webhook secret. |
-| `CFTOOLS_SERVER_API_ID` | none | Required. Server API ID from CFTools, normally formatted as a UUID. The application must have an active grant for this server. |
+| `CFTOOLS_APPLICATION_ID` | none | ***Required***. ID of the CFTools Data API application. |
+| `CFTOOLS_APPLICATION_SECRET` | none | ***Required***. Secret of the same CFTools Data API application. This is not the webhook secret. |
+| `CFTOOLS_SERVER_API_ID` | none | ***Required***. Server API ID from CFTools, normally formatted as a UUID. The application must have an active grant for this server. |
 
 ## Configuration interactions
 
