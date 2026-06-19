@@ -4,6 +4,14 @@ The bot is configured through environment variables. Every supported variable is
 
 Required variables have no default and the bot cannot start without them.
 
+## Required CFTools configuration
+
+| Environment variable | Default | Description |
+|---|---:|---|
+| `CFTOOLS_APPLICATION_ID` | none | ***Required***. ID of the CFTools Data API application. |
+| `CFTOOLS_APPLICATION_SECRET` | none | ***Required***. Secret of the same CFTools Data API application. This is not the webhook secret. |
+| `CFTOOLS_SERVER_API_ID` | none | ***Required***. Server API ID from CFTools, normally formatted as a UUID. The application must have an active grant for this server. |
+
 ## Discord connection
 
 | Environment variable | Default | Description |
@@ -23,14 +31,6 @@ Required variables have no default and the bot cannot start without them.
 | `DISCORD_PLAYER_NAME_MAX_LENGTH` | `24` | `4`–`100` | Maximum player-name length. Longer names end with `...`. |
 | `DISCORD_KD_FORMAT` | `float` | `float`, `k/d`, `k:d` | `float` displays the calculated ratio, for example `2.5`. Other modes display kills and deaths, for example `5/2` or `5:2`. |
 | `DISCORD_EMBED_COLOR` | `black` | name, `#RRGGBB`, `R,G,B` | Embed color. Named values: `blue`, `red`, `green`, `orange`, `yellow`, `purple`, `pink`, `gray`, `grey`, `black`, `white`. RGB channels must be `0`–`255`. Alpha is not supported. |
-
-## Required CFTools configuration
-
-| Environment variable | Default | Description |
-|---|---:|---|
-| `CFTOOLS_APPLICATION_ID` | none | ***Required***. ID of the CFTools Data API application. |
-| `CFTOOLS_APPLICATION_SECRET` | none | ***Required***. Secret of the same CFTools Data API application. This is not the webhook secret. |
-| `CFTOOLS_SERVER_API_ID` | none | ***Required***. Server API ID from CFTools, normally formatted as a UUID. The application must have an active grant for this server. |
 
 ## Configuration interactions
 
