@@ -44,3 +44,27 @@ Required variables have no default and the bot cannot start without them.
 - The footer credit is always English. The CFTools data-source line follows the response language.
 - Without a selected statistic, the table contains player name, kills, deaths, and K/D. Selecting a statistic produces a two-column player/statistic table.
 - CFTools authentication tokens are stored only in process memory, renewed before expiration, and recreated after a service restart.
+
+## Windows service installation
+
+Run `install-service.bat` from an Administrator-capable Windows account. The batch file requests elevation and starts the interactive PowerShell installer.
+
+For the simplest installation, place these three downloaded files in one directory:
+
+- `cf-leaderboard.exe`
+- `install-service.bat`
+- `install-service.ps1`
+
+If the EXE is not next to the installer script, it will automatically open a Windows file picker.
+
+The installer:
+
+- installs NSSM through `winget` using package `NSSM.NSSM`,
+- validates all required and optional bot settings,
+- provides predefined configuration choices,
+- automatically uses `cf-leaderboard.exe` from the installer directory; otherwise it opens a file picker,
+- copies the executable to `%ProgramFiles%\CF Leaderboard`,
+- stores the bot configuration in the NSSM service environment,
+- configures automatic startup and restart on failure,
+- waits up to 30 seconds for the service to enter the `Running` state,
+- shows the service status and complete `logger.log` content if startup fails.
