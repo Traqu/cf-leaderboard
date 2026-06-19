@@ -9,7 +9,7 @@ Required variables have no default and the bot cannot start without them.
 | Environment variable | Default | Description |
 |---|---:|---|
 | `CFTOOLS_APPLICATION_ID` | none | ***Required***. ID of the CFTools Data API application. |
-| `CFTOOLS_APPLICATION_SECRET` | none | ***Required***. Secret of the same CFTools Data API application. This is not the webhook secret. |
+| `CFTOOLS_APPLICATION_SECRET` | none | ***Required***. Secret of the same CFTools Data API application. |
 | `CFTOOLS_SERVER_API_ID` | none | ***Required***. Server API ID from CFTools, normally formatted as a UUID. The application must have an active grant for this server. |
 
 ## Discord connection
