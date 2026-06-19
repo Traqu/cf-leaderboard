@@ -41,9 +41,7 @@ Required variables have no default and the bot cannot start without them.
 - With `DISCORD_RESPONSE_VISIBILITY=public`, response content is always English so a shared channel does not contain responses in the command caller's language.
 - `DISCORD_LOCALIZATION_ENABLED=false` forces English command labels and English responses.
 - If Discord provides an unsupported locale or a translation key is absent from a locale-specific bundle, the base English bundle is used.
-- The footer credit is always English. The CFTools data-source line follows the response language.
 - Without a selected statistic, the table contains player name, kills, deaths, and K/D. Selecting a statistic produces a two-column player/statistic table.
-- CFTools authentication tokens are stored only in process memory, renewed before expiration, and recreated after a service restart.
 
 ## Windows service installation
 
